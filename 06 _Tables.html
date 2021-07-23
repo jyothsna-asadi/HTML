@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Tables</title>
+	<style>
+		body{
+			margin-bottom: 500px;
+	        
+		}
+		#orange,#orange th,#orange td{
+			border: 2px solid orangered;
+			border-collapse: collapse;
+		}
+		#white{
+			width:1000%;
+			text-align: center;
+			font-family: arial,sans-serif;
+			padding: 10px;
+			box-shadow: 0 0 10px black;
+		}
+        #orange thead{
+        	background-color: orangered;
+        	color: white;
+        }
+        #orange tbody{
+        	background-color:lightsalmon; 
+        }
+        #yellow,#yellow th,#yellow td{
+            width: 100%
+        	padding: 10px;
+            border-color: #1B5E20;
+            border-spacing: 3px;
+            
+
+        }
+        #yellow thead {
+        	background-color:#FF9800 ;
+        	margin: 2px; 
+        	
+        }
+       #tr2 th{
+            background-image: url(tree.jpg);
+            background-size: cover;
+       }
+       #t6 th {
+       	background-color: pink;
+       	border-color: blue;
+       	padding: 10px 0px 10px 0px;
+       }
+       #t6 td{
+         background-color: orange;
+         padding: 10px 0px 10px 0px;
+       }
+       span{
+       	display: block;
+       }
+        
+	</style>
+</head>
+<body>
+	<h2>
+	    simple table
+	</h2>
+	<table id="orange";>
+		<thead >
+			<tr>
+				<th>SNO</th>
+				<th>NAME</th>
+				<th>COMPANY</th>
+				<th>ADDRESS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+				<td>Infosys</td>
+				<td>Bangalore</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Raj</td>
+				<td>Wipro</td>
+				<td>Hyderabad</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mahesh</td>
+				<td>Hcl</td>
+				<td>Noida</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Sony</td>
+				<td>cts</td>
+				<td>chennai</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>Table with col Span</h2>
+	<table border="3">
+		<thead>
+			<tr>
+				<th>SNO</th>
+				<th>NAME</th>
+				<th colspan="2">COMPANY & ADDRESS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+				<td>Infosys</td>
+				<td>Bangalore</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Raj</td>
+				<td>Wipro</td>
+				<td>Hyderabad</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mahesh</td>
+				<td>Hcl</td>
+				<td>Noida</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Sony</td>
+				<td>cts</td>
+				<td>chennai</td>
+			</tr>
+	</tr>
+	</table>
+	<h2>Table with Row Span</h2>
+	<table border="2">
+		<thead>
+			<tr>
+				<th>SNO</th>
+				<th>NAME</th>
+				<th>COMPANY</th>
+				<th>ADDRESS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				
+				<td rowspan="2">1</td>
+				<td>John</td>
+				<td>Infosys</td>
+				<td>Bangalore</td>
+			</tr>
+			<tr>
+				<td>Raj</td>
+				<td>Wipro</td>
+				<td>Hyderabad</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mahesh</td>
+				<td>Hcl</td>
+				<td>Noida</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Sony</td>
+				<td>cts</td>
+				<td>chennai</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2> Table 1</h2>
+ <table border="2" id="yellow">
+	<thead>
+		<tr>
+			<th>Sr.No</th>
+			<th>Roll No</th>
+			<th>Name</th>
+			<th>Team</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="background-color: #FF9800 ;">1</td>
+			<td>1001</td>
+			<td>john</td>
+			<td>Red</td>
+		</tr>
+		<tr>     
+		<td style="background-color: #FF9800 ;">2</td>
+		<td>1002</td>
+		<td>peter</td>
+		<td>Blue</td>
+		</tr>
+		<tr>     
+		<td style="background-color: #FF9800 ;">3</td>
+		<td>1003</td>
+		<td>henry</td>
+		<td>Green</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Table 2</h2>
+<table border="2"; style="border-color: darkgreen" width="50%" >
+	<thead style="color: red;">
+		<tr id="tr2">
+			<th>Roll No</th>
+			<th>Name</th>
+			<th>Team</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="color: darkred;">
+			<td >1001</td>
+			<td>john</td>
+			<td>red</td>
+		</tr>
+		<tr style="color:darkred;">
+			<td>1002</td>
+			<td>Peter</td>
+			<td>Blue</td>
+		</tr>
+		<tr style="color: darkred;">
+			<td>1003</td>
+			<td>Henry</td>
+			<td>Green</td>
+		</tr>
+		<tr style="color: darkred;">
+			<td>1004</td>
+			<td>Ford</td>
+			<td>Yellow</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Table 3</h2>
+<table border="2">
+	<thead>
+		<tr>
+			<th>Column 1</th>
+			<th>Column 2</th>
+			<th>Column 3</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td rowspan="2">Row 1 Cell 1</td>
+		<td>Row 1 Cell 2</td>
+		<td>Row 2 cell 3</td>
+	</tr>
+<tr>
+	<td>Row 2 Cell 2</td>
+	<td>Row 2 Cell 3</td>
+</tr>
+<tr >
+	<td colspan="3" >
+		Row 3 Cell 1		
+	</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Table 4</h2>
+<table border="No">
+	<tbody>
+		<tr>
+			<td rowspan="11"><b>TCB</b></td>
+			<td><b>Order me:</b></td>
+			<td colspan="3">#AB001</td>
+		</tr>
+		<tr>
+			<td><b>Order Date</b></td>
+			<td colspan="3"> 23-Mar-2016</td>
+		</tr>
+		<tr>
+			<td colspan="4" style="text-align:center"><b>customer</b></td>
+		</tr>
+		<tr>
+			<td><b>Name</b></td>
+			<td colspan="4">John papas</td>
+		</tr>
+		<tr>
+			<td><b>Address</b></td>
+			<td colspan="3">Independence Day</td>
+		</tr>
+		<tr>
+			<td colspan="4" style="text-align: center"><b>Order Details</b></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td> DC Mice and Men</td>
+			<td>Book</td>
+			<td>10.00$</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Less Miserables</td>
+			<td>Book</td>
+			<td>12.00$</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Game of Thrones-501</td>
+			<td>DVD</td>
+			<td>50.00$</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Samsung Galaxy</td>
+			<td>Mobile Phone</td>
+			<td>200.00$</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td><b>total</b></td>
+			<td>272.00$</td>
+		</tr>
+
+	</tbody>
+	
+</table>
+<h2>Table 5</h2>
+	<table border="1">
+       
+		<tbody>
+			<tr>
+				<td><b>I</b></td>
+				<td><b>II</b></td>
+				<td><b>III</b></td>
+				<td><b>IV</b></td>
+				<td><b>V</b></td>
+				<td><b>VI</b></td>
+				<td><b>VII</b></td>
+			</tr>
+			
+			<tr>
+				<td style="background-color: lightgreen;"><b>H</b></td>
+				<td colspan="1"></td>
+				<td rowspan="3" width="100px" style="text-align: center"><b>Periodic Table of Elements</b></td>
+                <td colspan="3"></td>
+                <td style="background-color: #FF9800 ;"><b> He</b></td>
+			</tr>
+			<tr>
+				<td><b>Li</b></td>
+				<td><b>Be</b></td>
+				<td colspan="2"></td>
+				<td><b>B</b></td>
+				<td style="background-color:  #FF9800 ;"><b>Ne</b></td>
+			</tr>
+			<tr>
+				<td><b>Na</b></td>
+				<td><b>Mg</b></td>
+				<td colspan="2"></td>
+				<td><b>Al</b></td>
+				<td style="background-color: #FF9800 ;"><b> Ar</b></td>
+			</tr>
+			<tr>
+				<td><b>K</b></td>
+				<td><b>Ca</b></td>
+				<td><b>Sc</b></td>
+				<td><b>Ti</b></td>
+				<td><b>V</b></td>
+				<td><b>Ga</b></td>
+				<td style="background-color: #FF9800  ;"><b>Kr</b></td>
+			</tr>
+
+		</tbody>
+
+		
+	</table>
+
+	<h2>Table 6</h2>
+	<table border="No" style="border-color: blue; box-shadow: 0 0 5px black" id="t6">
+		<thead >
+			<tr>
+				<th colspan="3"><b>Purchase Order</b></th>
+				<th><b>TutorialBrain-10th Oct 2020</b></th>
+			</tr>
+			
+		</thead>
+		<tbody style="box-shadow: 0 0 1px black">
+			<tr><td colspan="3" >
+				<span><b>VENDER:</b></span>
+				 <span>ABC XYZ lmd</span>
+			<span>DUMMY STREET</span>
+		    <span> BUILDING 123</span>
+		    <span>HAZARIBAGH</span>	
+		    <span>JHARKHAND</span>
+		   <span> 825301</span>
+		   </td>
+			<td >
+				<span><b>SHIP TO:</b><span>
+			    <span>MS DHONI</span>
+			    <span>WILSON GARDON</span>
+			    <span>SOUTHEAST BLOCK</span>
+			    <span>RANCHI-834001</span>
+			   </td>
+			  </tr>
+		</tbody>
+		<thead style="box-shadow: 0 0 1px black">
+			<tr>
+				<th style="text-align: center">Qty.</th>
+				<th style="text-align: center">Item Code.</th>
+				<th style="text-align: center">Description</th>
+				<th style="text-align: center">Unit Price</th>
+			</tr>
+		</thead>
+		<tbody >
+			<tr style="box-shadow: 0 0 1px black; background-image: url(../img/img2);">
+				<td>100</td>
+				<td>LABCDE</td>
+				<td>Pencils</td>
+				<td>20.00</td>
+			</tr>
+			<tr style="box-shadow: 0 0 1px black">
+				<td>1000</td>
+				<td>IN877</td>
+				<Td>Notebooks</Td>
+				<td>100.00</td>
+			</tr>
+			<tr style="box-shadow: 0 0 1px black">
+				<td>500</td>
+				<td>IP8675</td>
+				<td>Pens</td>
+				<td>70.00</td>
+			</tr>
+			<tr style="box-shadow: 0 0 1px black"><td colspan="3", style="text-align: center"><b>Subtotal</b></td>
+				<td>190.00</td>
+			</tr>
+			<tr style="box-shadow: 0 0 1px black">
+				<td colspan="2", style="text-align: center"><b>GST</b></td>
+				<td>5%</td>
+				<td>9.50</td>
+			</tr>
+			<tr style="box-shadow: 0 0 1px black">
+				<td style="text-align: center" colspan="3"><b>Grand Total</b></td>
+				<td>$ 199.50</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>
